@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- nav bar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://www.qc.cuny.edu/Pages/home.aspx">
+      <img src="{{ url_for('static', filename='assets/qc-logo-2.png') }}">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Undergraduate
+        </a>
+
+      <a class="navbar-item">
+        Resources
+      </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Corporate Finance
+          </a>
+          <a class="navbar-item">
+            Actuarial Studies
+          </a>
+          <a class="navbar-item">
+            International Business
+          </a>
+          <a class="navbar-item">
+            Public Policy (concentration) 
+          </a>
+          <a class="navbar-item">
+            Fintech (concentration) 
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-danger">
+            <strong>FAQs</strong>
+          </a>
+          <a class="button is-danger">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- navbar end -->
+
+<!-- hero -->
+
+<section class="hero is-large">
+  <div class="hero-body has-bg-img">
+    <div class="container">
+      <h1 class="title has-text-white has-text-centered qc-title">
+       Queens College School of Business
+      </h1>
+      <h2 id="typewriter" class="subtitle has-text-white is-size-2 has-text-centered is-family-sans-serif">
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- hero end -->
+
+
+<!-- content -->
+  <section class="section">
+    <div class="container">
+        <h1 class="has-text-centered title is-1">Our Programs</h1>
+        <div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title">Corporate Finance</p>
+      <div class="buttons">
+    <button class="button is-link">More Info</button>
+    </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title is-size-3">Actuarial Studies</p>
+      <button class="button is-link">More Info</button>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+     <p class="title">International Business</p>
+     <div class="buttons">
+     <button class="button is-link">More Info</button>
+     </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title">Public Policy <span class="is-size-5">(Concentration)</span></p>
+      <div class="buttons">
+      <button class="button is-link">More Info</button>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title">Fintech <span class="is-size-5">(Concentration)</span></p>
+      <div class="buttons">
+      <button class="button is-link">More Info</button>
+      </div>
+    </article>
+  </div>
+</div>
+    </div>
+  </section>
+<!--  -->
+
+{% endblock content %}
