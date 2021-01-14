@@ -1,15 +1,24 @@
 from flask import Flask, render_template
-from flask_flatpages import FlatPages
+from flask_flatpages import FlatPages,pygmented_markdown, pygments_style_defs
 from flask_frozen import Freezer
 import sys
+import pygments, markdown
+
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
+FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite', 'fenced_code', 'tables']
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
 freezer = Freezer(app)
+
+app.config['SESSION_COOKIE_SECURE'] = False
+
+@app.route('/pygments.css')
+def pygments_css():
+    return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
 
 
 @app.route('/')

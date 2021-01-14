@@ -1,6 +1,10 @@
-title: Hello World
-date: 2012-03-04
+title: Hello
+tagline: This is ECON Test page
+published: 2010-12-22
 
-# Hello World
 
-This is a simple web page
+# Welcome
+Welcome to Economics Department Page
+
+- Hello
+* [google](https://google.com)

@@ -4,35 +4,146 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ url_for('pygments_css')  }}">
     <style type="text/css">
     	@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     	.has-bg-img { 
-    		background: url('static/assets/image.jpg')center center; 
-    		background-size:cover; 
+    		background: url('static/assets/image.jpg')no-repeat center center ; 
+    		background-size:auto; 
+        background-position:center;
     		}
     	.qc-title {
-    		 font-family: 'Mukta', sans-serif;
-    		 font-size: 5.5rem;
+    		 /*font-family: 'Mukta', sans-serif;*/
+         font-family: 'Open Sans', sans-serif;
+    		 font-size: 4rem;
 /*    		 -webkit-text-fill-color: white;  Will override color (regardless of order) 
     		 -webkit-text-stroke-width: 2px;
     		 -webkit-text-stroke-color: black;*/
 /*    		 background: white;*/
     		}
+        .headings {
+          font-family: 'Open Sans', sans-serif;
+        }
     </style>
   </head>
   <body>
-  	<!-- <h1><a href="{{ url_for("index") }}">My site</a></h1> -->
-  	{% block content %}
+    <!-- nav bar -->
+<nav class="navbar is-active" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://www.qc.cuny.edu/Pages/home.aspx">
+      <img src="{{ url_for('static', filename='assets/qc-logo-2.png') }}">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+      <a class="navbar-item">
+        Resources
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Undergraduate
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Corporate Finance
+          </a>
+          <a class="navbar-item">
+            Actuarial Studies
+          </a>
+          <a class="navbar-item">
+            International Business
+          </a>
+          <a class="navbar-item">
+            Public Policy (concentration) 
+          </a>
+          <a class="navbar-item">
+            Fintech (concentration) 
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-danger">
+            <strong>FAQs</strong>
+          </a>
+          <a class="button is-danger">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- navbar end -->
+  {% block content %}
 	{% endblock content %}
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
   <script>
-    new Typewriter('#typewriter', {
-      strings: ['The Business School of tomorrow in today’s Queens'],
-      autoStart: true,
-      loop: true,
+    // Type writer effect
+    var app = document.getElementById('typewriter');
+
+    var typewriter = new Typewriter(app, {
+        loop: false
+    });
+
+    typewriter.typeString('The Business School of tomorrow in today’s Queens')
+        .stop()
+        // .typeString('Strings can be removed')
+        // .pauseFor(2500)
+        // .deleteChars(7)
+        // .typeString('<strong>altered!</strong>')
+        // .pauseFor(2500)
+        .start();
+    // navbar burger implementation
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
     });
   </script>
+ 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
