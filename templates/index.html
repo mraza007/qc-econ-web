@@ -21,13 +21,102 @@
 
 
 <!-- mission statement -->
-  <section class="section">
+<div class="container">
+<section class="hero">
+  <div class="hero-body">
     <div class="container">
-        <h1 class="has-text-centered title is-1 headings">Our Mission Statement</h1>
-        <p class="is-size-5 is-family-sans-serif has-text-justified is-italic">"The mission of the school of business is to provide students with a marketable skill set reflecting varied intellectual interests including policy, sustainability, and technology. The School through concentrations such as fintech and policy provides an affordable path for a diverse student population to be well-equipped for rewarding and fulfilling careers in a wide variety of industries."
-        </p>
+      <h1 class="is-size-2 has-text-centered title headings">
+      Our Mission Statement
+      </h1>
+      <h2 class="subtitle is-family-sans-serif has-text-centered is-italic">
+        "The <strong>mission</strong> of the school of business is to provide students with a marketable skill set reflecting varied intellectual interests including policy, sustainability, and technology. The School through concentrations such as fintech and policy provides an affordable path for a diverse student population to be well-equipped for rewarding and fulfilling careers in a wide variety of industries."
+      </h2>
+      <h2 class="subtitle has-text-centered is-family-sans-serif has-text-weight-semibold">
+        <div class="block">
+        Preparing for successful careers in the rapidly evolving world of business, the QC school of business bridges finance and technology.
+        </div>
+      </h2>
     </div>
-  </section>
+  </div>
+</section>
 <!--  -->
+
+
+<!-- programs -->
+<section class="hero is-danger">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="is-size-2 has-text-centered title headings">
+        Our Programs
+      </h1>
+      <h2 class="subtitle is-family-sans-serif has-text-justified">
+        <strong>Bachelor of Business Administration (BBA)</strong> provides a solid business education that responds to the demand of prospective employers for specific quantitative and technological competencies. Data analysis and modeling play a central role in our integrated curriculum. Teamwork and group projects are also critical ingredients that help ensure that our graduates
+      </h2>
+      <ul class="is-size-5 is-family-sans-serif">
+        <li>understand the global and local economic trends</li>
+        <li>gain proficiency in digital business platforms</li>
+        <li>able to use tools relevant to digital finance</li>
+        <li>learn the consequences of globalization and environmental change</li>
+        <li>analyze how artificial intelligence and machine learning applications create new business models</li>
+        <li>develop innovative business strategies</li>
+        <li>learn from professors with expertise in big data, public policy, cryptocurrency, credit markets, e-commerce, capital markets, market modeling, valuation, innovation, payment systems, behavioral economics, and social media</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--  -->
+
+<section class="section">
+  <div class="columns">
+    <div class="column">
+      <div class="box zoom">
+        <div class="media-center">
+          <figure class="image is-5by4">
+            <img src="{{ url_for('static', filename='assets/fintech.jpg') }}" alt="Image">
+          </figure>
+        </div>
+        <h2 class="is-size-5 is-family-sans-serif has-text-centered has-text-weight-semibold">
+           Finance (concentrations in Corporate Finance and Fintech) 
+         </h2>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box zoom">
+        <div class="media-center">
+          <figure class="image is-5by4">
+            <img src="{{ url_for('static', filename='assets/actuary.jpg') }}" alt="Image">
+          </figure>
+        </div>
+        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
+           Actuarial Studies
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box zoom">
+        <div class="media-center">
+          <figure class="image is-5by4">
+            <img src="{{ url_for('static', filename='assets/ib.jpg') }}" alt="Image">
+          </figure>
+        </div>
+        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
+           International Business 
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box zoom">
+        <div class="media-center">
+          <figure class="image is-5by4">
+            <img src="{{ url_for('static', filename='assets/policy.jpg') }}" alt="Image">
+          </figure>
+        </div>
+        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
+           Business & Policy Analysis 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% endblock content %}

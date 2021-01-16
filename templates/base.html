@@ -27,6 +27,13 @@
         .headings {
           font-family: 'Open Sans', sans-serif;
         }
+        .zoom {
+          transition: transform .5s; /* Animation */
+        }
+
+        .zoom:hover {
+          transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
     </style>
   </head>
   <body>
@@ -72,10 +79,7 @@
           <a class="navbar-item">
             Fintech (concentration) 
           </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
+          <!-- <hr class="navbar-divider"> -->
         </div>
       </div>
     </div>

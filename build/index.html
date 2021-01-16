@@ -4,29 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="/pygments.css">
     <style type="text/css">
     	@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     	.has-bg-img { 
-    		background: url('static/assets/image.jpg')center center; 
-    		background-size:cover; 
+    		background: url('static/assets/image.jpg')no-repeat center center ; 
+    		background-size:auto; 
+        background-position:center;
     		}
     	.qc-title {
-    		 font-family: 'Mukta', sans-serif;
-    		 font-size: 5.5rem;
+    		 /*font-family: 'Mukta', sans-serif;*/
+         font-family: 'Open Sans', sans-serif;
+    		 font-size: 4rem;
 /*    		 -webkit-text-fill-color: white;  Will override color (regardless of order) 
     		 -webkit-text-stroke-width: 2px;
     		 -webkit-text-stroke-color: black;*/
 /*    		 background: white;*/
     		}
+        .headings {
+          font-family: 'Open Sans', sans-serif;
+        }
+        .zoom {
+          transition: transform .5s; /* Animation */
+        }
+
+        .zoom:hover {
+          transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
     </style>
   </head>
   <body>
-  	<!-- <h1><a href="/">My site</a></h1> -->
-  	
-
-<!-- nav bar -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
+    <!-- nav bar -->
+<nav class="navbar is-active" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://www.qc.cuny.edu/Pages/home.aspx">
       <img src="/static/assets/qc-logo-2.png">
@@ -44,15 +56,13 @@
       <a class="navbar-item">
         Home
       </a>
-
+      <a class="navbar-item">
+        Resources
+      </a>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           Undergraduate
         </a>
-
-      <a class="navbar-item">
-        Resources
-      </a>
         <div class="navbar-dropdown">
           <a class="navbar-item">
             Corporate Finance
@@ -69,10 +79,7 @@
           <a class="navbar-item">
             Fintech (concentration) 
           </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
+          <!-- <hr class="navbar-divider"> -->
         </div>
       </div>
     </div>
@@ -93,10 +100,13 @@
 </nav>
 
 <!-- navbar end -->
+  
+
+
 
 <!-- hero -->
 
-<section class="hero is-large">
+<section class="hero is-medium">
   <div class="hero-body has-bg-img">
     <div class="container">
       <h1 class="title has-text-white has-text-centered qc-title">
@@ -111,63 +121,152 @@
 <!-- hero end -->
 
 
-<!-- content -->
-  <section class="section">
+<!-- mission statement -->
+<div class="container">
+<section class="hero">
+  <div class="hero-body">
     <div class="container">
-        <h1 class="has-text-centered title is-1">Our Programs</h1>
-        <div class="tile is-ancestor">
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">Corporate Finance</p>
-      <div class="buttons">
-    <button class="button is-link">More Info</button>
+      <h1 class="is-size-2 has-text-centered title headings">
+      Our Mission Statement
+      </h1>
+      <h2 class="subtitle is-family-sans-serif has-text-centered is-italic">
+        "The <strong>mission</strong> of the school of business is to provide students with a marketable skill set reflecting varied intellectual interests including policy, sustainability, and technology. The School through concentrations such as fintech and policy provides an affordable path for a diverse student population to be well-equipped for rewarding and fulfilling careers in a wide variety of industries."
+      </h2>
+      <h2 class="subtitle has-text-centered is-family-sans-serif has-text-weight-semibold">
+        <div class="block">
+        Preparing for successful careers in the rapidly evolving world of business, the QC school of business bridges finance and technology.
+        </div>
+      </h2>
     </div>
-    </article>
   </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title is-size-3">Actuarial Studies</p>
-      <button class="button is-link">More Info</button>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-     <p class="title">International Business</p>
-     <div class="buttons">
-     <button class="button is-link">More Info</button>
-     </div>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">Public Policy <span class="is-size-5">(Concentration)</span></p>
-      <div class="buttons">
-      <button class="button is-link">More Info</button>
-      </div>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <p class="title">Fintech <span class="is-size-5">(Concentration)</span></p>
-      <div class="buttons">
-      <button class="button is-link">More Info</button>
-      </div>
-    </article>
-  </div>
-</div>
-    </div>
-  </section>
+</section>
 <!--  -->
 
 
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+<!-- programs -->
+<section class="hero is-danger">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="is-size-2 has-text-centered title headings">
+        Our Programs
+      </h1>
+      <h2 class="subtitle is-family-sans-serif has-text-justified">
+        <strong>Bachelor of Business Administration (BBA)</strong> provides a solid business education that responds to the demand of prospective employers for specific quantitative and technological competencies. Data analysis and modeling play a central role in our integrated curriculum. Teamwork and group projects are also critical ingredients that help ensure that our graduates
+      </h2>
+      <ul class="is-size-5 is-family-sans-serif">
+        <li>understand the global and local economic trends</li>
+        <li>gain proficiency in digital business platforms</li>
+        <li>able to use tools relevant to digital finance</li>
+        <li>learn the consequences of globalization and environmental change</li>
+        <li>analyze how artificial intelligence and machine learning applications create new business models</li>
+        <li>develop innovative business strategies</li>
+        <li>learn from professors with expertise in big data, public policy, cryptocurrency, credit markets, e-commerce, capital markets, market modeling, valuation, innovation, payment systems, behavioral economics, and social media</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--  -->
+
+<section class="section">
+  <div class="columns">
+    <div class="column">
+      <div class="box zoom">
+        <div class="media-center">
+          <figure class="image is-5by4">
+            <img src="/static/assets/fintech.jpg" alt="Image">
+          </figure>
+        </div>
+        <h2 class="is-size-5 is-family-sans-serif has-text-centered has-text-weight-semibold">
+           Finance (concentrations in Corporate Finance and Fintech) 
+         </h2>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box zoom">
+        <div class="media-center">
+          <figure class="image is-5by4">
+            <img src="/static/assets/actuary.jpg" alt="Image">
+          </figure>
+        </div>
+        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
+           Actuarial Studies
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box zoom">
+        <div class="media-center">
+          <figure class="image is-5by4">
+            <img src="/static/assets/ib.jpg" alt="Image">
+          </figure>
+        </div>
+        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
+           International Business 
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box zoom">
+        <div class="media-center">
+          <figure class="image is-5by4">
+            <img src="/static/assets/policy.jpg" alt="Image">
+          </figure>
+        </div>
+        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
+           Business & Policy Analysis 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
   <script>
-    new Typewriter('#typewriter', {
-      strings: ['The Business School of tomorrow in today’s Queens'],
-      autoStart: true,
-      loop: true,
+    // Type writer effect
+    var app = document.getElementById('typewriter');
+
+    var typewriter = new Typewriter(app, {
+        loop: false
+    });
+
+    typewriter.typeString('The Business School of tomorrow in today’s Queens')
+        .stop()
+        // .typeString('Strings can be removed')
+        // .pauseFor(2500)
+        // .deleteChars(7)
+        // .typeString('<strong>altered!</strong>')
+        // .pauseFor(2500)
+        .start();
+    // navbar burger implementation
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
     });
   </script>
+ 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
