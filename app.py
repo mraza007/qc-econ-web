@@ -8,6 +8,7 @@ DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite', 'fenced_code', 'tables']
+# FREEZER_RELATIVE_URLS = True
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -20,10 +21,18 @@ app.config['SESSION_COOKIE_SECURE'] = False
 def pygments_css():
     return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
 
+@freezer.register_generator
+def url_generator():
+    yield('/')
+    yield('/programs')
 
 @app.route('/')
 def index():
-    return render_template('index.html', pages=pages)
+    return render_template('index4.html', pages=pages)
+
+@app.route('/programs/')
+def programs():
+	return render_template('index6.html')
 
 @app.route('/<path:path>/')
 def page(path):
