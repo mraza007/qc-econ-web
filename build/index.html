@@ -1,277 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="/static/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="/pygments.css">
-    <style type="text/css">
-    	@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-    	.has-bg-img { 
-    		background: url('static/assets/image.jpg')no-repeat center center ; 
-    		background-size:auto; 
-        background-position:center;
-    		}
-    	.qc-title {
-    		 /*font-family: 'Mukta', sans-serif;*/
-         font-family: 'Open Sans', sans-serif;
-    		 font-size: 4rem;
-/*    		 -webkit-text-fill-color: white;  Will override color (regardless of order) 
-    		 -webkit-text-stroke-width: 2px;
-    		 -webkit-text-stroke-color: black;*/
-/*    		 background: white;*/
-    		}
-        .headings {
-          font-family: 'Open Sans', sans-serif;
-        }
-        .zoom {
-          transition: transform .5s; /* Animation */
-        }
-
-        .zoom:hover {
-          transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-    </style>
-  </head>
-  <body>
-    <!-- nav bar -->
-<nav class="navbar is-active" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://www.qc.cuny.edu/Pages/home.aspx">
-      <img src="/static/assets/qc-logo-2.png">
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-      <a class="navbar-item">
-        Resources
-      </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Undergraduate
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            Corporate Finance
-          </a>
-          <a class="navbar-item">
-            Actuarial Studies
-          </a>
-          <a class="navbar-item">
-            International Business
-          </a>
-          <a class="navbar-item">
-            Public Policy (concentration) 
-          </a>
-          <a class="navbar-item">
-            Fintech (concentration) 
-          </a>
-          <!-- <hr class="navbar-divider"> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-danger">
-            <strong>FAQs</strong>
-          </a>
-          <a class="button is-danger">
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- navbar end -->
-  
-
-
-
-<!-- hero -->
-
-<section class="hero is-medium">
-  <div class="hero-body has-bg-img">
-    <div class="container">
-      <h1 class="title has-text-white has-text-centered qc-title">
-       Queens College School of Business
-      </h1>
-      <h2 id="typewriter" class="subtitle has-text-white is-size-2 has-text-centered is-family-sans-serif">
-      </h2>
-    </div>
-  </div>
-</section>
-
-<!-- hero end -->
-
-
-<!-- mission statement -->
-<div class="container">
-<section class="hero">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="is-size-2 has-text-centered title headings">
-      Our Mission Statement
-      </h1>
-      <h2 class="subtitle is-family-sans-serif has-text-centered is-italic">
-        "The <strong>mission</strong> of the school of business is to provide students with a marketable skill set reflecting varied intellectual interests including policy, sustainability, and technology. The School through concentrations such as fintech and policy provides an affordable path for a diverse student population to be well-equipped for rewarding and fulfilling careers in a wide variety of industries."
-      </h2>
-      <h2 class="subtitle has-text-centered is-family-sans-serif has-text-weight-semibold">
-        <div class="block">
-        Preparing for successful careers in the rapidly evolving world of business, the QC school of business bridges finance and technology.
-        </div>
-      </h2>
-    </div>
-  </div>
-</section>
-<!--  -->
-
-
-<!-- programs -->
-<section class="hero is-danger">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="is-size-2 has-text-centered title headings">
-        Our Programs
-      </h1>
-      <h2 class="subtitle is-family-sans-serif has-text-justified">
-        <strong>Bachelor of Business Administration (BBA)</strong> provides a solid business education that responds to the demand of prospective employers for specific quantitative and technological competencies. Data analysis and modeling play a central role in our integrated curriculum. Teamwork and group projects are also critical ingredients that help ensure that our graduates
-      </h2>
-      <ul class="is-size-5 is-family-sans-serif">
-        <li>understand the global and local economic trends</li>
-        <li>gain proficiency in digital business platforms</li>
-        <li>able to use tools relevant to digital finance</li>
-        <li>learn the consequences of globalization and environmental change</li>
-        <li>analyze how artificial intelligence and machine learning applications create new business models</li>
-        <li>develop innovative business strategies</li>
-        <li>learn from professors with expertise in big data, public policy, cryptocurrency, credit markets, e-commerce, capital markets, market modeling, valuation, innovation, payment systems, behavioral economics, and social media</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<!--  -->
-
-<section class="section">
-  <div class="columns">
-    <div class="column">
-      <div class="box zoom">
-        <div class="media-center">
-          <figure class="image is-5by4">
-            <img src="/static/assets/fintech.jpg" alt="Image">
-          </figure>
-        </div>
-        <h2 class="is-size-5 is-family-sans-serif has-text-centered has-text-weight-semibold">
-           Finance (concentrations in Corporate Finance and Fintech) 
-         </h2>
-      </div>
-    </div>
-    <div class="column">
-      <div class="box zoom">
-        <div class="media-center">
-          <figure class="image is-5by4">
-            <img src="/static/assets/actuary.jpg" alt="Image">
-          </figure>
-        </div>
-        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
-           Actuarial Studies
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="box zoom">
-        <div class="media-center">
-          <figure class="image is-5by4">
-            <img src="/static/assets/ib.jpg" alt="Image">
-          </figure>
-        </div>
-        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
-           International Business 
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="box zoom">
-        <div class="media-center">
-          <figure class="image is-5by4">
-            <img src="/static/assets/policy.jpg" alt="Image">
-          </figure>
-        </div>
-        <div class="is-size-5 is-family-sans-serif block has-text-centered has-text-weight-semibold">
-           Business & Policy Analysis 
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-	
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
-  <script>
-    // Type writer effect
-    var app = document.getElementById('typewriter');
-
-    var typewriter = new Typewriter(app, {
-        loop: false
-    });
-
-    typewriter.typeString('The Business School of tomorrow in today’s Queens')
-        .stop()
-        // .typeString('Strings can be removed')
-        // .pauseFor(2500)
-        // .deleteChars(7)
-        // .typeString('<strong>altered!</strong>')
-        // .pauseFor(2500)
-        .start();
-    // navbar burger implementation
-    document.addEventListener('DOMContentLoaded', () => {
-
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach( el => {
-          el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-          });
-        });
-      }
-
-    });
-  </script>
- 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true
-    });
-  </script>
-  </body>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<title>Morphing Page Transition | Demo 4 | Codrops</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Poppins" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/demo.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="demo-4 loading">
+		<main>
+			<div class="frame frame--fixed">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="/" title="Previous Demo"><h1 class="codrops-header__title">Home</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="/" title="Previous Demo"><h1 class="codrops-header__title">Faculty</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="/" title="Previous Demo"><h1 class="codrops-header__title">Resources</h1></a>
+					</div>
+				</header>
+			</div>
+			<div class="content content--intro">
+				<div class="content__inner">
+					<h2 class="content__title">Queens College School of Business</h2>
+					<!-- <h3 class="content__subtitle">History, Culture &amp; Destinations</h3> -->
+					<a href="#" class="enter">Start your journey</a>
+				</div>
+				<div class="shape-wrap">
+					<svg class="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
+						<path d="M -30.45,-43.86 -30.45,0 53.8,0 53.8,0 179.5,0 179.5,0 193.3,0 193.3,0 253.1,0 253.1,0 276.1,0 276.1,0 320.6,0 320.6,0 406.5,0 406.5,0 435.6,0 435.6,0 477,0 477,0 527.6,0 527.6,0 553.7,0 553.7,0 592,0 592,0 742.3,0 742.3,0 762.2,0 762.2,0 776,0 776,0 791.3,0 791.3,0 852.7,0 852.7,0 871.1,0 871.1,0 878.7,0 878.7,0 891,0 891,0 923.2,0 923.2,0 940.1,0 940.1,0 976.9,0 976.9,0 1031,0 1031,0 1041,0 1041,0 1176,0 1176,0 1192,0 1192,0 1210,0 1210,0 1225,0 1225,0 1236,0 1236,0 1248,0 1248,0 1273,0 1273,0 1291,0 1291,0 1316,0 1316,0 1337,0 1337,0 1356,0 1356,0 1414,0 1414,0 1432,0 1432,0 1486,0 1486,-43.86 Z" pathdata:id="M -30.45,-57.86 -30.45,442.6 53.8,443.8 53.8,396.3 179.5,396.3 179.5,654.7 193.3,654.7 193.3,589.1 253.1,589.1 253.1,561.6 276.1,561.6 276.1,531.2 320.6,531.2 320.6,238.6 406.5,238.6 406.5,213.9 435.6,213.9 435.6,246.2 477,246.2 477,289.9 527.6,289.9 527.6,263.3 553.7,263.3 553.7,280.4 592,280.4 592,189.2 742.3,189.2 742.3,259.5 762.2,259.5 762.2,103.7 776,103.7 776,77.11 791.3,77.11 791.3,18.21 852.7,18.21 852.7,86.61 871.1,86.61 871.1,231 878.7,240.5 878.7,320.3 891,320.3 891,434.3 923.2,434.3 923.2,145.5 940.1,145.5 940.1,117 976.9,117 976.9,139.8 1031,139.8 1031,284.2 1041,284.2 1041,242.4 1176,242.4 1176,282.3 1192,282.3 1192,641.4 1210,641.4 1210,692.7 1225,692.7 1225,599.6 1236,599.6 1236,527.4 1248,527.4 1248,500.8 1273,500.8 1273,523.6 1291,523.6 1291,652.8 1316,652.8 1316,533.1 1337,533.1 1337,502.7 1356,502.7 1356,523.6 1414,523.6 1414,491.3 1432,491.3 1432,523.6 1486,523.6 1486,-57.86 Z"></path>
+					</svg>
+				</div>
+			</div><!-- /content -->
+			<div class="content content--fixed">
+				<div class="content__inner">
+					<h2 style="font-size: 50px"class="content__title content__title--filled">The Business School of tomorrow in today’s Queens</h2>
+					<a href="/programs" class="explore">Explore Our Programs</a>
+				</div>
+			</div>
+			<script src="/static/js/imagesloaded.pkgd.min.js"></script>
+			<script src="/static/js/charming.min.js"></script>
+			<script src="/static/js/anime.min.js"></script>
+			<script src="/static/js/demo4.js"></script>
+		</main>
+	</body>
 </html>
