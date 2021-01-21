@@ -25,14 +25,19 @@ def pygments_css():
 def url_generator():
     yield('/')
     yield('/programs')
+    yield('/faculty')
 
 @app.route('/')
 def index():
-    return render_template('index4.html', pages=pages)
+    return render_template('main.html', pages=pages)
 
 @app.route('/programs/')
 def programs():
-	return render_template('index6.html')
+	return render_template('programs.html')
+
+@app.route('/faculty/')
+def faculty():
+    return render_template('faculty.html')
 
 @app.route('/<path:path>/')
 def page(path):

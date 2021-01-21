@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Faculty</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/base_faculty.css') }}" />
+		<link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-cross" viewBox="0 0 24 23">
+				<title>cross</title>
+				<path d="M23.865 3.677c.197-.383.164-.818-.008-1.18.048-.41-.06-.827-.448-1.147L22.323.457c-.636-.524-1.632-.689-2.25 0a155.348 155.348 0 0 1-8.797 9.001C9.011 7.342 6.72 5.255 4.443 3.165c-.8-.734-1.956-.503-2.458.37C1.253 3.9.659 4.374.168 5.182c-.233.386-.215.872 0 1.258 1.47 2.635 4.31 4.951 6.646 7.083-.313.28-.623.562-.942.836-3.146 2.702-5.268 4.416-1.331 7.187.053.037.107.029.161.05.076.036.148.06.232.074.026 0 .05.005.075.003.082.007.16.027.243.011 2.117-.415 4.085-2.074 5.872-3.9 1.74 1.715 3.592 3.353 5.63 4.325.485.232 1.063.097 1.436-.227.626.047 1.197-.342 1.484-.901.042-.026.07-.041.116-.07.91-.569.993-1.701.32-2.482-1.522-1.762-3.138-3.438-4.787-5.084 2.968-2.9 6.674-6.027 8.542-9.667z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="content">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="{{ url_for('index') }}"><h1 class="codrops-header__title">Home</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="{{ url_for('faculty') }}" ><h1 class="codrops-header__title">Faculty</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="{{ url_for('programs') }}" ><h1 class="codrops-header__title">Programs</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="/" ><h1 class="codrops-header__title">Resources</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="https://qcsocialsciences.org/qc-business/" title="Previous Demo"><h1 class="codrops-header__title">Mobile Version</h1></a>
+					</div>
+				</header>
+			</div>
+			<div class="content">
+				<div class="grid">
+				<a class="grid__item" href="#diane">
+					<div class="box">
+						<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Schults.jpg" alt="Diane Shults"/>
+						<h3 class="box__title--bottom">Diane Shults</h3>
+						<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Career Coach</span></h4>
+						<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+					</div>
+				</a>
+				<a class="grid__item" href="#eleanor">
+					<div class="box">
+						<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Mavashev.jpg" alt="Eleanor Mavashev"/>
+						<h3 class="box__title--bottom">Eleanor Mavashev</h3>
+						<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Career Coach</span></h4>
+						<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+					</div>
+				</a>
+					<a class="grid__item" href="#clive">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Clive_Belfield-300x300.jpg" alt="Clive Belfield"/>
+							<h3 class="box__title--bottom">Clive Belfield</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#leticia">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Abad.jpg" alt="Leticia Arroyo Abad"/>
+							<h3 class="box__title--bottom">Leticia Arroyo Abad</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#cara">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Marshall-2-261x300.jpg" alt="Cara Marshall"/>
+							<h3 class="box__title--bottom">Cara Marshall</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#joan">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Nix.jpg" alt="Joan Nix"/>
+							<h3 class="box__title--bottom">Joan Nix</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#francisco">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Panaranda.jpg" alt="Francisco Peñaranda"/>
+							<h3 class="box__title--bottom">Francisco Peñaranda</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#nuria">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/nuria.jpg" alt="Núria Rodríguez-Planas"/>
+							<h3 class="box__title--bottom">Núria Rodríguez-Planas</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#roff">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Roff.jpg" alt="Jennifer Roff"/>
+							<h3 class="box__title--bottom">Jennifer Roff</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#shih">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/shih.jpg" alt="Kevin Shih"/>
+							<h3 class="box__title--bottom">Kevin Shih</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#taspinar">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2020/10/taspinar.jpg" alt="Suleyman Taspinar"/>
+							<h3 class="box__title--bottom">Suleyman Taspinar</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+					<a class="grid__item" href="#tao">
+						<div class="box">
+							<img class="box__img" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/tao-wang.jpg" alt="Tao Wang"/>
+							<h3 class="box__title--bottom">Tao Wang </h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+							<!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="overlay">
+				<div class="overlay__reveal"></div>
+				<div class="overlay__item" id="diane">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Schults.jpg" alt="Diane Schults"/>
+							<h3 class="box__title--bottom">Diane Shults</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Career Coach</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">Diane Shults is currently Associate Director of Alumni & Employer Engagement at Queens College.  She works with Alumni and Employers to bring career opportunities to students.  Diane also works as a Career Educator with students in Economics, Business, Accounting & Risk Management on career competencies to prepare them for the transition from College to Career. Prior to QC, Diane worked in Human Resources for several financial institutions, such as Credit Suisse, Citi and Bank of America.</p>
+				</div>
+				<div class="overlay__item" id="eleanor">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Mavashev.jpg" alt="Eleanor Mavashev"/>
+							<h3 class="box__title--bottom">Eleanor Mavashev</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Career Coach</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">Eleanor Mavashev is a Business Career Educator & Internship Coordinator at Queens College Center for Career Engagement and Internships. Eleanor works alongside Diane Shults, Associate Director of Alumni & Employer Engagement, by assisting business students with career guidance and securing internship/job opportunities. Prior to Queens College, Eleanor worked at mid-size accounting firm, hospitality area and at Long Island University as a Career Counselor. In addition, she also runs her own tax practice.</p>
+				</div>
+				<div class="overlay__item" id="clive">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Clive_Belfield-300x300.jpg" alt="Clive Belfield"/>
+							<h3 class="box__title--bottom">Clive Belfield</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">Clive Belfield is a professor of economics at Queens College, City University of New York. He received his PhD in economics from the University of Exeter in England. He is also Principal Economist at the Center for Benefit-Cost Studies in Education, Teachers College, Columbia University. Professor Belfield has authored three books and numerous articles on the economics of education; he has served as a consultant to the World Bank, the U.S. Department of Education, and the British Government, as well as nonprofit foundations and education think tanks; and he has been an expert witness in state constitutional court cases on educational adequacy.</p>
+				</div>
+				<div class="overlay__item" id="leticia">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Abad.jpg" alt="Leticia Arroyo Abad"/>
+							<h3 class="box__title--bottom">Leticia Arroyo Abad</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">Leticia Arroyo Abad is an associate professor in the Department of Economics at Queens College. Her primary research expertise is the study of globalization and inequality both within and across nations, with a focus on the Americas. Before getting her Ph.D. at the University of California, Davis, Leticia worked as a macroeconomic analyst for an Argentine consultancy where she was charged with forecasting the effect of policy changes on economic conditions. She also analyzed specific industry portfolios, after which she worked at Inter – American Development and Bank and the Argentine Department of Industry</p>
+				</div>
+				<div class="overlay__item" id="cara">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Marshall-2-261x300.jpg" alt="Cara Marshall"/>
+							<h3 class="box__title--bottom">Cara Marshall</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">Cara Marshall is a tenured Lecturer at Queens College of the City University of New York and the Director of Queens College’s Graduate Program in Risk Management.  Dr. Marshall teaches in the areas of risk management, portfolio management, financial modeling, Microsoft Excel and VBA programming, Python programming, risk measurement, and corporate finance. 
+					Professor Marshall Cara has also worked as a consultant and conducted training at leading investment banks, asset management firms, hedge funds, and government agencies.  Specifically, some of the firms where Cara has trained employees include: Goldman Sachs, Deutsche Bank, JPMorgan Chase, Citi, Morgan Stanley, Bank of America, Wells Fargo, Barclays, Lazard, Bank of China, Prudential, HSBC, Fidelity, RBC, FHFA, and U.S. Department of the Treasury.
+					</p>
+				</div>
+				<div class="overlay__item" id="joan">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Nix.jpg" alt="Joan Nix"/>
+							<h3 class="box__title--bottom">Joan Nix</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">
+					Joan Nix is an Associate Professor of Economics at Queens College of CUNY and a Deputy Chair of the BBA program. Joan Nix received her Ph.D in Economics from NYU. Her research interests span behavioral economics, corporate culture as behavioral risk management, regulatory capture, net neutrality, the economics of crypto assets, common ownership, and wavelet methodology. Recent research has been published In Economic Modelling, and chapters in books on Wavelets. She received the President’s award for teaching excellence based largely on letters of nomination from former students.  She continues to enjoy contact with current and former students. 
+					</p>
+
+				</div>
+				<div class="overlay__item" id="francisco">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Panaranda.jpg" alt="Francisco Peñaranda"/>
+							<h3 class="box__title--bottom">Francisco Peñaranda</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">
+					Francisco Peñaranda is an associate professor at Queens College CUNY. Previously he was a senior researcher at the Santander Financial Institute, an assistant  professor at Universitat Pompeu Fabra and University of Alicante, and a research fellow at the London School of Economics. He works and teaches on Asset Pricing and Portfolio Management. His research has been published in the Journal of Econometrics, the Journal of Financial and Quantitative Analysis, and Management Science, among other scientific journals.
+					</p>
+				</div>
+				<div class="overlay__item" id="nuria">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/nuria.jpg" alt="Núria Rodríguez-Planas "/>
+							<h3 class="box__title--bottom">Núria Rodríguez-Planas </h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">
+					Núria Rodríguez-Planas  is a professor in Economics at City University of New York (CUNY), Queens College; Doctoral Faculty at the Graduate Center (CUNY) and managing editor of IZA Journal of Labor Policy This academic year, I am a Research Scholar at the Economics Department at Barnard College – Columbia University.
+					Prior to moving to New York, I was Visiting Research Fellow at IZA in Bonn from 2011 to 2014, Visiting Professor at the Universitat Pompeu Fabra from 2012 to 2013, Assistant Professor at the Universitat Autònoma de Barcelona from 2004 to 2011, and Affiliated Professor at the Barcelona Graduate School of Economics from 2007 to 2012. I have also held positions in Washington DC as an Economist at Mathematica Policy Research from 2000 to 2004, the Board of Governors of the Federal Reserve System from 1998 to 2000, and the Brookings Institution from 1997 to 1998. I received my Ph.D. in Economics in 1999 from Boston University.
+					</p>
+				</div>
+				<div class="overlay__item" id="roff">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Roff.jpg" alt="Jennifer Roff"/>
+							<h3 class="box__title--bottom">Jennifer Roff</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">
+					Jennifer Roff is an associate professor at Queens College and the Graduate Center of the City University of New York and a Research Fellow at the IZA Institute of Labor Economics. Her research interests fall broadly within labor and economic demography, with a particular focus on the economics of the family. Recent work has focused on the empirical implications of marital matching for children as well as the effects of marriage laws on men’s household production. 
+					</p>
+				</div>
+				<div class="overlay__item" id="shih">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/shih.jpg" alt="Kevin Shih"/>
+							<h3 class="box__title--bottom">Kevin Shih</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">
+					Kevin Shih is an Assistant Professor in the Economics Department at Queens College. He is a labor economist who specializes in research on the economics of immigration. His work examines issues related to the causes and consequences of international migration flows. He has written articles on various topics, such as the impacts of skilled immigration via the H-1B visa program, the influence of DACA on the educational attainment of undocumented youth, and the implications of rising international student presence in US higher education.
+					</p>
+				</div>
+				<div class="overlay__item" id="taspinar">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2020/10/taspinar.jpg" alt="Suleyman Taspinar"/>
+							<h3 class="box__title--bottom">Suleyman Taspinar</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">
+					Suleyman Taspinar, Assistant Professor and Director of the Quantitative Economics Program. He is an econometrician with the core area of research on estimation and inference problems in spatial econometric models with potential heterogeneity. He also works on estimation and inference problems in models of risk in finance. Separately from these two areas, he is interested in empirical research problems that analyze the behavior of economic agents when these agents are exposed to climate-change related extreme shocks.
+					</p>
+				</div>
+				<div class="overlay__item" id="tao">
+					<div class="box">
+						<img class="box__img box__img--original" src="https://qcsocialsciences.org/wp-content/uploads/2021/01/tao-wang.jpg" alt="Tao Wang"/>
+							<h3 class="box__title--bottom">Tao Wang</h3>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--reverse">Professor</span></h4>
+					</div>
+					<p class="overlay__content" style="font-size: 1.2rem;">
+					Tao Wang in a Professor of Economics. His research interests include Financial Economics, Financial Econometrics, International Finance and Macroeconomics
+					</p>
+				</div>
+				<button class="overlay__close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+			</div>
+		</main>
+		<script src="{{ url_for('static',filename='js/imagesloaded.pkgd.min.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/TweenMax.min.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/demo_faculty.js') }} "></script>
+	</body>
+</html>

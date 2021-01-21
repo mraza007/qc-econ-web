@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Our Programs</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/base.css')}}" />
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/demo.css')}}" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-6 loading">
+		<main>
+			<div class="frame frame--fixed">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="{{ url_for('index') }}"><h1 class="codrops-header__title">Home</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="{{ url_for('faculty') }}" ><h1 class="codrops-header__title">Faculty</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="{{ url_for('programs') }}" ><h1 class="codrops-header__title">Programs</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="/" ><h1 class="codrops-header__title">Resources</h1></a>
+						<a class="codrops-icon codrops-icon--prev" href="https://qcsocialsciences.org/qc-business/" title="Previous Demo"><h1 class="codrops-header__title">Mobile Version</h1></a>
+					</div>
+				</header>
+			</div>
+			<div class="slideshow">
+				<div class="slides slides--images">
+					<div class="slide slide--current">
+						<div class="slide__img" style="background-image: url(/static/img/fintech.jpg)"></div>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(/static/img/ib.jpg)"></div>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(/static/img/actuary.jpg)"></div>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(/static/img/policy.jpg)"></div>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(/static/img/quant.jpg)"></div>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(/static/img/econ.jpg)"></div>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(/static/img/account.jpg)"></div>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(/static/img/risk.jpg)"></div>
+					</div>
+					<div class="slide">
+						<div class="slide__img" style="background-image: url(/static/img/tax.jpg)"></div>
+					</div>
+				</div>
+				<div class="slides slides--titles">
+					<div class="slide slide--current">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 5rem">BBA in Finance</h2>
+						<h6 class="slide__title" style="font-size: 1.5rem" >Concentration in Corporate Finance/Fintech</h6>
+						</span>
+						<a style="background-color: red;" href="#" class="explore"> Explore </a>
+					</div>
+					<div class="slide">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 5rem">BBA in International Business</h2>
+						</span>
+						<a style="background-color: red;" href="{{url_for('programs')}}" class="explore"> Explore </a>
+					</div>
+					<div class="slide">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 3rem" >BBA in Business & Policy Analysis (forthcoming Fall 2022)</h2>
+						</span>
+						<a style="background-color: red;" href="{{url_for('programs')}}" class="explore"> Explore </a>					
+					</div>
+					<div class="slide">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 4rem">Actuarial Studies for Business</h2>
+						</span>
+						<a style="background-color: red;" href="{{url_for('programs')}}" class="explore"> Explore </a>
+					</div>
+					<div class="slide">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 4rem">BS in Quantitative Economics</h2>
+						</span>
+						<a style="background-color: red;" href="{{url_for('programs')}}" class="explore"> Explore </a>
+					</div>
+					<div class="slide">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 4rem">BA in Economics</h2>
+						</span>
+						<a style="background-color: red;" href="{{url_for('programs')}}" class="explore"> Explore </a>
+					</div>
+					<div class="slide">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 4rem">BA in Accounting</h2>
+						</span>
+						<a style="background-color: red;" href="{{url_for('programs')}}" class="explore"> Explore </a>
+					</div>
+					<div class="slide">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 4rem">Graduate Program in Risk Management</h2>
+						</span>
+						<a style="background-color: red;" href="{{url_for('programs')}}" class="explore"> Explore </a>
+					</div>
+					<div class="slide">
+						<span style="font-style: center; background-color: black; padding: 10px;">
+						<h2 class="slide__title" style="font-size: 4rem">M.S. in Taxation (forthcoming, Spring 2022)</h2>
+						</span>
+						<a style="background-color: red;" href="{{url_for('programs')}}" class="explore"> Explore </a>
+					</div>
+				</div>
+				<nav class="slidenav">
+					<button class="slidenav__item slidenav__item--prev">Previous</button>
+					<span>/</span>
+					<button class="slidenav__item slidenav__item--next">Next</button>
+				</nav>
+			</div>
+		</main>
+		<script src="{{url_for('static' , filename='js/demo.js')}}"></script>
+		<script src="{{url_for('static' , filename='js/imagesloaded.pkgd.min.js')}}"></script>
+		<script src="{{url_for('static',filename='js/anime.min.js')}}"></script>
+		<script src="{{url_for('static',filename='js/demo6.js')}}"></script>
+	</body>
+</html>
