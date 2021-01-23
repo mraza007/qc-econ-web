@@ -33,7 +33,11 @@ def index():
 
 @app.route('/programs/')
 def programs():
-	return render_template('programs.html')
+	return render_template('programs-1.html')
+
+@app.route('/p/')
+def p():
+    return render_template('programs-1.html')
 
 @app.route('/faculty/')
 def faculty():
