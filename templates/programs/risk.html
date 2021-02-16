@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Graduate Program in Risk Management{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/risk.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3">Graduate Program in Risk Management</h1>
+			<p>Leverage your interest in finance with a Master’s degree or a 12-credit Advanced Certificate in Risk Management, a field with rapidly growing career possibilities on Wall Street and across every sector.  The M.S. in Risk Management​ takes 30 credits to complete, if a student has met all prerequisites. Students choose one of four areas of concentration: Finance, International Business, Accounting, or Actuarial Studies</p>
+			<p>Study in a top program that’s affordable—and in close proximity to the world’s capital markets.</p>
+			<p>Our graduates go on to careers in major financial institutions as well as industry, government, consulting, assurance, and audit and actuarial services.</p>
+		</div>
+		<div class="col">
+			<div class="container">
+				<h2 class="display-4">Major Requirements</h2>
+			
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}

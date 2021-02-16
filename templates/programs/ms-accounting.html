@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}MS Accounting{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/account.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3">MS Accounting</h1>
+			<p>The Accounting and Information Systems Department offers a Master of Science in Accounting that is registered with the NYS Department of Education and approved to meet the 150-credit CPA licensing requirement. The MS program offers courses in accounting principles and applications, taxation, data analytics, risk assessment, information systems, managerial decision-making, and regulatory compliance. The MS degree prepares you for a number of career paths, including public, corporate, or governmental accounting, consulting, compliance, and teaching in higher education institutions. 
+			</p>
+		</div>
+		<div class="col">
+			<div class="container">
+				<h2 class="display-4">Major Requirements</h2>
+			
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}

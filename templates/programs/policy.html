@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}BBA in Business & Policy Analysis{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/policy.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3">BBA in Business & Policy Analysis</h1>
+			<p class="lead">
+			  Forthcoming Fall 2022
+			</p>
+			<p>The major prepares students to be responsible for examining the efficacy of existing policies and laying out the groundwork for new programs and legislation, reviewing and amending policy drafts and proposing suggestions to improve the effects of existing policies, work closely with stakeholders to determine the goals and objectives of policies. Students gain understanding of the industry and market conditions and develop strong organization and analytical skills.</p>
+		</div>
+		<div class="col">
+			<div class="container">
+			<h2 class="display-4">Major Requirements</h2>
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}

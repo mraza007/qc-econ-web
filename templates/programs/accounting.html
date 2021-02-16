@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}BSc in Accounting{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/account.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3">BSc in Accounting</h1>
+			<p>The Accounting and Information Systems Department offers courses in accounting, information systems, business law, and taxation for accounting majors and other students. Accounting majors may prepare themselves for a career in public, private, or governmental accounting, or for the teaching of accountancy in secondary schools. There are two alternative tracks to the accounting major, depending on the career objectives of the student</p>
+			<h4>Accounting Major- CPA Exam Track</h4>
+			<p>This program is targeted to students looking to obtain licensure as CPAs and pursue careers in public accounting or in senior financial roles in industry, government or not-for-profit entities. The CPA Exam Track meets educational requirements on accounting course credits to sit for the CPA exam in New York State. This program has a minimum GPA requirement of 2.5 for courses in this track and a total of 63 credits.
+			For students pursuing the CPA exam track, the department offers an accelerated program in which students may complete some master-level courses during their undergraduate senior year. </p>
+			<h4>Accounting Major - Business Accounting Track</h4>
+			<p>This program targets students for careers in industry in financial accounting, managerial accounting and accounting operations. The Business Accounting Track does not meet educational requirements to sit for the CPA exam. Students completing this track are not eligible for entry to the Queens College Master of Science in Accounting program. This program has a minimum GPA requirement of 2.0 for courses in this track and a total of 40 credits.</p>
+		</div>
+		<div class="col">
+			<div class="container">
+			<h2 class="display-4">Major Requirements</h2>
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}BA in Economics{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/econ.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3">BA in Economics</h1>
+			<p><strong>BA in Economics</strong> major allows students to acquire skills in economic theory, statistical methods, and critical thinking to understand consumer and firm behavior and evaluate the impact of economic policy. Our majors learn skills that allow them to work successfully in government, financial services, insurance, business, and health administration. Courses in economics prepare students for graduate work in economics, business, and public administration and for professional schools such as law, journalism, and social work. Majors in economics are also able to prepare to teach economics or social studies on a secondary level. </p>
+		</div>
+		<div class="col">
+			<div class="container">
+				<h2 class="display-4"> Major Requirements</h2>
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}

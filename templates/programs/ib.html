@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}BBA in International Business{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/ib.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3">BBA in International Business</h1>
+			<p>BBA in <strong>International Business</strong> prepares graduates to deal effectively with the complexities of global business environments. It combines the dynamics of multinational business environments with creative problem solving, team building, presentation skills, strategic planning, and the use of data analysis to solve business problems.</p>
+		</div>
+		<div class="col">
+			<div class="container">
+				<h2 class="display-4">Major Requirements</h2>
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}

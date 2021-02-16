@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Queens College Business School</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/base-1.css') }}" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<script>
+			document.documentElement.className = 'js';
+			var supportsCssVars = function() {
+				var e,
+					t = document.createElement('style');
+				return (
+					(t.innerHTML = 'root: { --tmp-var: bold; }'),
+					document.head.appendChild(t),
+					(e = !!(
+						window.CSS &&
+						window.CSS.supports &&
+						window.CSS.supports('font-weight', 'var(--tmp-var)')
+					)),
+					t.parentNode.removeChild(t),
+					e
+				);
+			};
+			supportsCssVars() ||
+				alert('Please view this demo in a modern browser that supports CSS Variables.');
+		</script>
+	</head>
+	<body>
+		<main>
+			<div class="content">
+				<div class="header">
+					<h1 class="header__title">Why QC Business?</h1>
+					<!-- <p class="header__text">WebGL based transitions on scroll</p> -->
+				</div>
+				<!-- First Heading -->
+				<div class="heading">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p style="font-size: 1.5rem; text-align: justify;">The mission of QC Business School is to provide students with the skills needed to navigate through the fast evolving world of business.  As technology rapidly evolves and spreads across industries, our focus is on providing students with both the technical know-how and intellectual knowledge needed to achieve a competitive advantage in various careers from auditors to policy analysts. 
+							</p>
+
+						</div>
+						<div class="col">
+							<p style="font-size: 1.5rem; text-align: justify;">
+								Our goal of attracting and educating a diverse student body deepens and broadens the cultural familiarity that leaders of tomorrow must master.
+							</p>
+						</div>
+					</div>
+				</div>  							
+				</div>
+				<!-- second -->
+				<div class="heading">
+					<h1 class="header__title">OUR Mission</h1>
+				</div>
+				<!-- third -->
+				<div class="heading">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p style="font-size: 1.5rem; text-align: justify;">The mission of the school of business is to provide students with a marketable skill set reflecting varied intellectual interests including policy, sustainability, and technology.
+							</p>
+						</div>
+						<div class="col">
+							<p style="font-size: 1.5rem; text-align: justify;">
+								The School through concentrations such as fintech and policy provides an affordable path for a diverse student population to be well-equipped for rewarding and fulfilling careers in a wide variety of industries.Preparing for successful careers in the rapidly evolving world of business, the QC school of business bridges finance and technology.
+							</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="heading">
+					Learn more about our <a href="{{url_for('programs')}}">Programs </a>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://unpkg.com/three@0.102.1/build/three.min.js"></script>
+		<script src="https://unpkg.com/three.phenomenon@1.1.0/dist/three.phenomenon.umd.js"></script>
+		<script src="https://unpkg.com/uos@1.1.1/dist/uos.umd.js"></script>
+		<script src="{{url_for('static',filename='js/bundle.umd.js')}}"></script>
+	</body>
+</html>
+
+
+The School through concentrations such as fintech and policy provides an affordable path for a diverse student population to be well-equipped for rewarding and fulfilling careers in a wide variety of industries.
+Preparing for successful careers in the rapidly evolving world of business, the QC school of business bridges finance and technology.

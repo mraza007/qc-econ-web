@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}BS in Quantitative Economics{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/quant.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3">BS in Quantitative Economics</h1>
+			<p><strong>B.Sc. in Quantitative Economics</strong> is a STEM-eligible program for students interested in developing strong quantitative skills through course work in economics, mathematics, and computer science. It is recommended for students interested in careers that require data-intensive analysis in economics, business, or finance, and for those planning graduate studies in economics or who wish to engage in careers in economic research. </p>
+		</div>
+		<div class="col">
+			<div class="container">
+				<h2 class="display-4">Major Requirements</h2>
+			
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}

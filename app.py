@@ -31,9 +31,53 @@ def url_generator():
 def index():
     return render_template('main.html', pages=pages)
 
+@app.route('/whyqc')
+def whyqc():
+    return render_template('why-qc.html')
+
 @app.route('/programs/')
 def programs():
-	return render_template('programs-1.html')
+	return render_template('programs.html')
+
+@app.route('/finance/')
+def finance_bba():
+    return render_template('programs/finance.html')
+
+@app.route('/ib/')
+def ib():
+    return render_template('programs/ib.html')
+
+@app.route('/policy/')
+def policy():
+    return render_template('programs/policy.html')
+
+@app.route('/actuary/')
+def actuary():
+    return render_template('programs/actuary.html')
+
+@app.route('/quant/')
+def quant():
+    return render_template('programs/quant.html')
+
+@app.route('/econ/')
+def econ():
+    return render_template('programs/econ.html')
+
+@app.route('/accounting/')
+def accounting():
+    return render_template('programs/accounting.html')
+
+@app.route('/tax/')
+def tax():
+    return render_template('programs/tax.html')
+
+@app.route('/risk/')
+def risk():
+    return render_template('programs/risk.html')
+
+@app.route('/msaccounting/')
+def msaccounting():
+    return render_template('programs/ms-accounting.html')
 
 @app.route('/p/')
 def p():

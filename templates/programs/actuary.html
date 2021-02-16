@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Actuarial Studies for Business{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/actuary.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3">Actuarial Studies for Business</h1>
+			<p>This major prepares students for a career path in the insurance industry, as well as for a series of actuarial examinations. These examinations test an individual’s competence in probability, calculus, statistics, and other branches of mathematics</p>
+		</div>
+		<div class="col">
+			<div class="container">
+			<h2 class="display-4">Major Requirements</h2>
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}

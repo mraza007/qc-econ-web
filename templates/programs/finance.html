@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}BBA in Finance{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 25px;">
+	<div class="row">
+		<div class="col">
+			<img src="{{url_for('static',filename='img/fintech-1.jpg')}}" class="img-thumbnail" >
+			<h1 class="display-3"> BBA in Finance</h1>
+			<p> Global explosion of digital technology have dramatically changed what employers expect of new college graduates. Students wishing to pursue a career in finance must be able to answer job interview questions about capital structure, the CAPM, machine learning, forecasting, cryptocurrency,  and stock market efficiency. Finance professionals are assumed to know how to work with financial models using Python</p>
+			<h4>QC Finance students choose one of two concentrations:</h4>
+			<p>Corporate Finance (Deals with how businesses deal with funding sources,capital structuring and investment decision)</p>
+			<p>Students wishing to pursue a career in finance must be able to answer job interview questions about capital structure, the CAPM, machine learning, forecasting, cryptocurrency, and stock market efficiency.</p>
+			<p>Fintech (Involves using software to provide financial services)</p>
+			<p>This transformation offers career opportunities for those interested in learning how institutions and technology are evolving in this fast-moving and growing space. From cryptocurrencies to blockchains, QC's unique fintech concentration will help arrive at the frontier of applied finance by combining institutional studies with advanced econometric techniques</p>
+		</div>
+		<div class="col">
+			<div class="container">
+				<h2 class="display-4">Major Requirements</h2>
+			</div>
+		</div>
+	</div>
+	<a  class="btn btn-primary" href="{{url_for('programs')}}">Back to Programs</a>
+</div>
+{%endblock%}
