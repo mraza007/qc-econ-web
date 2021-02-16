@@ -42,7 +42,7 @@ def url_generator():
 def index():
     return render_template('main.html', pages=pages)
 
-@app.route('/whyqc')
+@app.route('/whyqc/')
 def whyqc():
     return render_template('why-qc.html')
 
