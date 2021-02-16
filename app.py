@@ -24,8 +24,19 @@ def pygments_css():
 @freezer.register_generator
 def url_generator():
     yield('/')
-    yield('/programs')
-    yield('/faculty')
+    yield('/programs/')
+    yield('/faculty/')
+    yield('/whyqc/')
+    yield('/finance/')
+    yield('/ib/')
+    yield('/policy/')
+    yield('/actuary/')
+    yield('/quant/')
+    yield('/econ/')
+    yield('/accounting/')
+    yield('/tax/')
+    yield('/risk/')
+    yield('/msaccounting/')
 
 @app.route('/')
 def index():
