@@ -1,14 +1,30 @@
 {% extends "base.html" %}
 {% block title %}Our Faculty{% endblock %} 
 {% block content %}
-<div style="padding-top: 20px;"class="container">
-	<div style="color:white; background-color: red"; class="jumbotron jumbotron-fluid">
-	  <div class="container">
-	    <h1 class="display-2 text-center" >Our Faculty</h1>
-	    {# <h4 class="text-center">Here you can find a list of programs that Queens College Business School Offers</h4> #}
-	  </div>
-	</div>
-</div>
+ 
+<section class="section home-5-bg" id="home">
+    <div id="particles-js"></div>
+    <div class="bg-overlay"></div>
+    <div class="home-center">
+        <div class="home-desc-center">
+            <div class="container">
+                <div class="justify-content-center row">
+                    <div class="col-lg-7">
+                        <div class="mt-40 text-center home-5-content">
+                            <div class="home-icon mb-4"><i class="mdi mdi-pinwheel mdi-spin text-white h1"></i></div>
+                            <h1 class="display-1 text-white font-weight-normal home-5-title mb-0">Our Faculty</h1>
+                            <!-- <p class="text-white-70 mt-4 f-15 mb-0">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis at suscipit laboriosam nisi ut aliquid a commodi consequatur Quis autem.</p>
+                            <div class="mt-5">
+                                <input class="btn btn-default" type="button" value="Get started">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 {# faculty #}
 
@@ -21,50 +37,35 @@
 			  <img src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Schults.jpg" class="figure-img img-fluid rounded">
 			  <h4>Diane Shults</h4>
 			  <figcaption class="figure-caption">Career Coach</figcaption>
+			  <strong>Diane Shults</strong> is currently Associate Director of Alumni & Employer Engagement at Queens College.  She works with Alumni and Employers to bring career opportunities to students.  Diane also works as a Career Educator with students in Economics, Business, Accounting & Risk Management on career competencies to prepare them for the transition from College to Career. Prior to QC, Diane worked in Human Resources for several financial institutions, such as Credit Suisse, Citi and Bank of America.
 			</figure>
-			<p>
-			  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-			    Read More
-			  </button>
-			</p>
-			<div class="collapse" id="collapseExample">
-			  <div class="card card-body">
-			    <p class="text-justify"><strong>Diane Shults</strong> is currently Associate Director of Alumni & Employer Engagement at Queens College.  She works with Alumni and Employers to bring career opportunities to students.  Diane also works as a Career Educator with students in Economics, Business, Accounting & Risk Management on career competencies to prepare them for the transition from College to Career. Prior to QC, Diane worked in Human Resources for several financial institutions, such as Credit Suisse, Citi and Bank of America.
-			    </p>
-			  </div>
-			</div>
 		</div>
 		<div class="col">
 			<figure class="figure">
 			  <img src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Mavashev.jpg" class="figure-img img-fluid rounded">
 			  <h4 >Eleanor Mavashev</h4>
 			  <figcaption class="figure-caption">Career Coach</figcaption>
+			  <p class="text-justify"><strong>Eleanor Mavashev</strong> is a Business Career Educator & Internship Coordinator at Queens College Center for Career Engagement and Internships. Eleanor works alongside Diane Shults, Associate Director of Alumni & Employer Engagement, by assisting business students with career guidance and securing internship/job opportunities. Prior to Queens College, Eleanor worked at mid-size accounting firm, hospitality area and at Long Island University as a Career Counselor. In addition, she also runs her own tax practice.
+			  </p>
 			</figure>
-			<p>
-			  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#eleanor" aria-expanded="false" aria-controls="eleanor">
-			    Read More
-			  </button>
-			</p>
-			<div class="collapse" id="eleanor">
-			  <div class="card card-body">
-			    <p class="text-justify"><strong>Eleanor Mavashev</strong> is a Business Career Educator & Internship Coordinator at Queens College Center for Career Engagement and Internships. Eleanor works alongside Diane Shults, Associate Director of Alumni & Employer Engagement, by assisting business students with career guidance and securing internship/job opportunities. Prior to Queens College, Eleanor worked at mid-size accounting firm, hospitality area and at Long Island University as a Career Counselor. In addition, she also runs her own tax practice.
-			    </p>
-			  </div>
-			</div>
 		</div>
 	</div>
 	<h2 class="display-2 text-center">QC Business Professors</h2>
-	<div class="row">
-		{% for professor in professors['econ'] %}
+	{% for professor in professors['econ'] %}
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="{{professor['image']}}">
-			<h4>{{professor['name']}}</h4>
-			<p class="lead">{{professor['title']}}</p>
-			<a class="btn btn-info" href="{{url_for('prof_page',professor=professor.id)}}" role="button">About {{professor['name']}}</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="{{professor['image']}}" class="figure-img img-fluid rounded">
+			  <h4>{{professor['name']}}</h4>
+			  <figcaption class="figure-caption">{{professor['title']}}</figcaption>
+			  <a class="btn btn-info" href="{{ professor['link'] }}" role="button">Website</a>
+			</figure>
 		</div>
-		{% endfor %}
+		<div class="col">
+			<p class="lead">{{professor['bio']}}</p>
+		</div>
 	</div>
-	
+	{% endfor %}
 
 
 </div>

@@ -6,8 +6,7 @@
     <title>Our Faculty</title>
     <link rel="stylesheet" type="text/css" href="/static/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="/pygments.css">
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -24,7 +23,68 @@
          /*-webkit-text-stroke-width: 4px;*/
          /*-webkit-text-stroke-color: black;*/
          /*background: white;*/
-        }
+       }
+/*         body{ 
+             margin-top:20px;
+             backgroundColor:#eee;
+         }*/
+         .home-5-bg {
+             background: #e72f2f;
+             position: relative;
+             background-size: cover;
+             height: 50vh;
+             background-position: center center;
+         }
+
+         .section {
+             position: relative;
+         }
+
+         .home-5-content {
+           z-index: 1;
+           position: relative;
+         }
+
+         .bg-overlay {
+             background-color: #000;
+             opacity: 0.7;
+             position: absolute;
+             top: 0;
+             left: 0;
+             height: 100%;
+             width: 100%;
+         }
+
+         .home-center {
+             display: table;
+             width: 100%;
+             height: 100%;
+         }
+
+         .home-desc-center {
+             display: table-cell;
+             vertical-align: middle;
+         }
+
+         .home-5-content {
+             z-index: 1;
+             position: relative;
+         }
+
+         .text-white-70 {
+             color: rgba(255, 255, 255, 0.8);
+         }
+
+         .f-15 {
+             font-size: 15px;
+         }
+
+         .home-5-bg #particles-js {
+             z-index: 1!important;
+         position: absolute;
+             width: 100%;
+             height: 100%;
+         }
     </style>
   </head>
   <body>
@@ -85,14 +145,30 @@
   </div>
 </nav>
   
-<div style="padding-top: 20px;"class="container">
-	<div style="color:white; background-color: red"; class="jumbotron jumbotron-fluid">
-	  <div class="container">
-	    <h1 class="display-2 text-center" >Our Faculty</h1>
-	    
-	  </div>
-	</div>
-</div>
+ 
+<section class="section home-5-bg" id="home">
+    <div id="particles-js"></div>
+    <div class="bg-overlay"></div>
+    <div class="home-center">
+        <div class="home-desc-center">
+            <div class="container">
+                <div class="justify-content-center row">
+                    <div class="col-lg-7">
+                        <div class="mt-40 text-center home-5-content">
+                            <div class="home-icon mb-4"><i class="mdi mdi-pinwheel mdi-spin text-white h1"></i></div>
+                            <h1 class="display-1 text-white font-weight-normal home-5-title mb-0">Our Faculty</h1>
+                            <!-- <p class="text-white-70 mt-4 f-15 mb-0">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis at suscipit laboriosam nisi ut aliquid a commodi consequatur Quis autem.</p>
+                            <div class="mt-5">
+                                <input class="btn btn-default" type="button" value="Get started">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -105,111 +181,159 @@
 			  <img src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Schults.jpg" class="figure-img img-fluid rounded">
 			  <h4>Diane Shults</h4>
 			  <figcaption class="figure-caption">Career Coach</figcaption>
+			  <strong>Diane Shults</strong> is currently Associate Director of Alumni & Employer Engagement at Queens College.  She works with Alumni and Employers to bring career opportunities to students.  Diane also works as a Career Educator with students in Economics, Business, Accounting & Risk Management on career competencies to prepare them for the transition from College to Career. Prior to QC, Diane worked in Human Resources for several financial institutions, such as Credit Suisse, Citi and Bank of America.
 			</figure>
-			<p>
-			  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-			    Read More
-			  </button>
-			</p>
-			<div class="collapse" id="collapseExample">
-			  <div class="card card-body">
-			    <p class="text-justify"><strong>Diane Shults</strong> is currently Associate Director of Alumni & Employer Engagement at Queens College.  She works with Alumni and Employers to bring career opportunities to students.  Diane also works as a Career Educator with students in Economics, Business, Accounting & Risk Management on career competencies to prepare them for the transition from College to Career. Prior to QC, Diane worked in Human Resources for several financial institutions, such as Credit Suisse, Citi and Bank of America.
-			    </p>
-			  </div>
-			</div>
 		</div>
 		<div class="col">
 			<figure class="figure">
 			  <img src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Mavashev.jpg" class="figure-img img-fluid rounded">
 			  <h4 >Eleanor Mavashev</h4>
 			  <figcaption class="figure-caption">Career Coach</figcaption>
+			  <p class="text-justify"><strong>Eleanor Mavashev</strong> is a Business Career Educator & Internship Coordinator at Queens College Center for Career Engagement and Internships. Eleanor works alongside Diane Shults, Associate Director of Alumni & Employer Engagement, by assisting business students with career guidance and securing internship/job opportunities. Prior to Queens College, Eleanor worked at mid-size accounting firm, hospitality area and at Long Island University as a Career Counselor. In addition, she also runs her own tax practice.
+			  </p>
 			</figure>
-			<p>
-			  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#eleanor" aria-expanded="false" aria-controls="eleanor">
-			    Read More
-			  </button>
-			</p>
-			<div class="collapse" id="eleanor">
-			  <div class="card card-body">
-			    <p class="text-justify"><strong>Eleanor Mavashev</strong> is a Business Career Educator & Internship Coordinator at Queens College Center for Career Engagement and Internships. Eleanor works alongside Diane Shults, Associate Director of Alumni & Employer Engagement, by assisting business students with career guidance and securing internship/job opportunities. Prior to Queens College, Eleanor worked at mid-size accounting firm, hospitality area and at Long Island University as a Career Counselor. In addition, she also runs her own tax practice.
-			    </p>
-			  </div>
-			</div>
 		</div>
 	</div>
 	<h2 class="display-2 text-center">QC Business Professors</h2>
-	<div class="row">
-		
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Clive_Belfield-300x300.jpg">
-			<h4>Clive Belfield</h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/1/" role="button">About Clive Belfield</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Clive_Belfield-300x300.jpg" class="figure-img img-fluid rounded">
+			  <h4>Clive Belfield</h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="http://belfield2.wix.com/cbhome" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Clive Belfield is a professor of economics at Queens College, City University of New York. He received his PhD in economics from the University of Exeter in England. He is also Principal Economist at the Center for Benefit-Cost Studies in Education, Teachers College, Columbia University. Professor Belfield has authored three books and numerous articles on the economics of education; he has served as a consultant to the World Bank, the U.S. Department of Education, and the British Government, as well as nonprofit foundations and education think tanks; and he has been an expert witness in state constitutional court cases on educational adequacy.</p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Abad.jpg">
-			<h4>Leticia Arroyo Abad</h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/2/" role="button">About Leticia Arroyo Abad</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Abad.jpg" class="figure-img img-fluid rounded">
+			  <h4>Leticia Arroyo Abad</h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="http://www.arroyoabad.com/" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Leticia Arroyo Abad is an associate professor in the Department of Economics at Queens College. Her primary research expertise is the study of globalization and inequality both within and across nations, with a focus on the Americas. Before getting her Ph.D. at the University of California, Davis, Leticia worked as a macroeconomic analyst for an Argentine consultancy where she was charged with forecasting the effect of policy changes on economic conditions. She also analyzed specific industry portfolios, after which she worked at Inter – American Development and Bank and the Argentine Department of Industry</p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Marshall-2-261x300.jpg">
-			<h4>Cara Marshall</h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/3/" role="button">About Cara Marshall</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Marshall-2-261x300.jpg" class="figure-img img-fluid rounded">
+			  <h4>Cara Marshall</h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="http://www.qc-econ-bba.com/facultypages/marshall/" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Cara Marshall is a tenured Lecturer at Queens College of the City University of New York and the Director of Queens College’s Graduate Program in Risk Management.  Dr. Marshall teaches in the areas of risk management, portfolio management, financial modeling, Microsoft Excel and VBA programming, Python programming, risk measurement, and corporate finance. Professor Marshall Cara has also worked as a consultant and conducted training at leading investment banks, asset management firms, hedge funds, and government agencies.  Specifically, some of the firms where Cara has trained employees include: Goldman Sachs, Deutsche Bank, JPMorgan Chase, Citi, Morgan Stanley, Bank of America, Wells Fargo, Barclays, Lazard, Bank of China, Prudential, HSBC, Fidelity, RBC, FHFA, and U.S. Department of the Treasury.</p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Nix.jpg">
-			<h4>Joan Nix</h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/4/" role="button">About Joan Nix</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Nix.jpg" class="figure-img img-fluid rounded">
+			  <h4>Joan Nix</h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="https://www.joannix.org/" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Joan Nix is an Associate Professor of Economics at Queens College of CUNY and a Deputy Chair of the BBA program. Joan Nix received her Ph.D in Economics from NYU. Her research interests span behavioral economics, corporate culture as behavioral risk management, regulatory capture, net neutrality, the economics of crypto assets, common ownership, and wavelet methodology. Recent research has been published In Economic Modelling, and chapters in books on Wavelets. She received the President’s award for teaching excellence based largely on letters of nomination from former students.  She continues to enjoy contact with current and former students.</p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Panaranda.jpg">
-			<h4>Francisco Peñaranda</h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/5/" role="button">About Francisco Peñaranda</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Panaranda.jpg" class="figure-img img-fluid rounded">
+			  <h4>Francisco Peñaranda</h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="http://sites.google.com/site/fpenaranda15/?" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Francisco Peñaranda is an associate professor at Queens College CUNY. Previously he was a senior researcher at the Santander Financial Institute, an assistant  professor at Universitat Pompeu Fabra and University of Alicante, and a research fellow at the London School of Economics. He works and teaches on Asset Pricing and Portfolio Management. His research has been published in the Journal of Econometrics, the Journal of Financial and Quantitative Analysis, and Management Science, among other scientific journals.</p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/nuria.jpg">
-			<h4>Núria Rodríguez-Planas </h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/6/" role="button">About Núria Rodríguez-Planas </a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/nuria.jpg" class="figure-img img-fluid rounded">
+			  <h4>Núria Rodríguez-Planas </h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="https://sites.google.com/site/nuriarodriguezplanas/" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Núria Rodríguez-Planas  is a professor in Economics at City University of New York (CUNY), Queens College; Doctoral Faculty at the Graduate Center (CUNY) and managing editor of IZA Journal of Labor Policy This academic year, I am a Research Scholar at the Economics Department at Barnard College – Columbia University.Prior to moving to New York, I was Visiting Research Fellow at IZA in Bonn from 2011 to 2014, Visiting Professor at the Universitat Pompeu Fabra from 2012 to 2013, Assistant Professor at the Universitat Autònoma de Barcelona from 2004 to 2011, and Affiliated Professor at the Barcelona Graduate School of Economics from 2007 to 2012. I have also held positions in Washington DC as an Economist at Mathematica Policy Research from 2000 to 2004, the Board of Governors of the Federal Reserve System from 1998 to 2000, and the Brookings Institution from 1997 to 1998. I received my Ph.D. in Economics in 1999 from Boston University.</p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Roff.jpg">
-			<h4>Jennifer Roff</h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/7/" role="button">About Jennifer Roff</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/Roff.jpg" class="figure-img img-fluid rounded">
+			  <h4>Jennifer Roff</h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="https://sites.google.com/site/jenniferroffecon/" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Jennifer Roff is an associate professor at Queens College and the Graduate Center of the City University of New York and a Research Fellow at the IZA Institute of Labor Economics. Her research interests fall broadly within labor and economic demography, with a particular focus on the economics of the family. Recent work has focused on the empirical implications of marital matching for children as well as the effects of marriage laws on men’s household production. </p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/shih.jpg">
-			<h4>Kevin Shih</h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/8/" role="button">About Kevin Shih</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/shih.jpg" class="figure-img img-fluid rounded">
+			  <h4>Kevin Shih</h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="http://kevinyshih.weebly.com/" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Kevin Shih is an Assistant Professor in the Economics Department at Queens College. He is a labor economist who specializes in research on the economics of immigration. His work examines issues related to the causes and consequences of international migration flows. He has written articles on various topics, such as the impacts of skilled immigration via the H-1B visa program, the influence of DACA on the educational attainment of undocumented youth, and the implications of rising international student presence in US higher education.</p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2020/10/taspinar.jpg">
-			<h4>Suleyman Taspinar</h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/9/" role="button">About Suleyman Taspinar</a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2020/10/taspinar.jpg" class="figure-img img-fluid rounded">
+			  <h4>Suleyman Taspinar</h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="https://sites.google.com/site/gcsuleymantaspinar/" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Suleyman Taspinar, Assistant Professor and Director of the Quantitative Economics Program. He is an econometrician with the core area of research on estimation and inference problems in spatial econometric models with potential heterogeneity. He also works on estimation and inference problems in models of risk in finance. Separately from these two areas, he is interested in empirical research problems that analyze the behavior of economic agents when these agents are exposed to climate-change related extreme shocks.</p>
+		</div>
+	</div>
+	
+	<div class="row" style="padding:10px">
 		<div class="col" style="padding: 10px;">
-			<img class="rounded"style="width: 400px; height:400px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/tao-wang.jpg">
-			<h4>Tao Wang </h4>
-			<p class="lead">Economics</p>
-			<a class="btn btn-info" href="/faculty/10/" role="button">About Tao Wang </a>
+			<figure class="figure">
+			  <img style="height: 250px;"src="https://qcsocialsciences.org/wp-content/uploads/2021/01/tao-wang.jpg" class="figure-img img-fluid rounded">
+			  <h4>Tao Wang </h4>
+			  <figcaption class="figure-caption">Economics</figcaption>
+			  <a class="btn btn-info" href="http://www.qc.edu/~twang" role="button">Website</a>
+			</figure>
 		</div>
-		
+		<div class="col">
+			<p class="lead">Tao Wang in a Professor of Economics. His research interests include Financial Economics, Financial Econometrics, International Finance and Macroeconomics</p>
+		</div>
 	</div>
 	
 
@@ -217,6 +341,127 @@
 </div>
 
 
+  <script type="text/javascript">
+    
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 20,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.22,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true,
+      "config_demo": {
+        "hide_card": false,
+        "background_color": "#b61924",
+        "background_image": "",
+        "background_position": "50% 50%",
+        "background_repeat": "no-repeat",
+        "background_size": "cover"
+      }
+    });  
+  </script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 </body>
 </html>

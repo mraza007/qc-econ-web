@@ -1,16 +1,25 @@
 {% extends "base.html" %}
 {% block title %}Our Programs{% endblock %} 
 {% block content %}
-<div style="padding-top: 20px;"class="container">
-	<div style="color:white; background-color: red"; class="jumbotron jumbotron-fluid">
-	  <div class="container">
-	    <h1 class="display-2 text-center" >Our Programs</h1>
-	    <h4 class="text-center">Here you can find a list of programs that Queens College Business School Offers</h4>
-	  </div>
-	</div>
-</div>
-
-
+<section class="section home-5-bg" id="home">
+    <div id="particles-js"></div>
+    <div class="bg-overlay"></div>
+    <div class="home-center">
+        <div class="home-desc-center">
+            <div class="container">
+                <div class="justify-content-center row">
+                    <div class="col-lg-7">
+                        <div class="mt-40 text-center home-5-content">
+                            <div class="home-icon mb-4"><i class="mdi mdi-pinwheel mdi-spin text-white h1"></i></div>
+                            <h1 class="display-1 text-white font-weight-normal home-5-title mb-0">Our Programs</h1>
+                            <p class="lead text-white-70 mt-4 f-15 mb-0">Here you can find a list of programs that Queens College Business School Offers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- programs -->
 <div class="container">
 	<h1 class="display-4 text-center">Undergraduate Programs</h1>
@@ -19,7 +28,7 @@
 			<figure class="figure">
 			  <img style="width:400px; height:300px;"src="{{url_for('static',filename='img/fintech-1.jpg')}}" class="figure-img img-fluid rounded" alt="...">
 			  <h5>BBA in Finance</h5>
-			  <p class="text-muted">Concentration in Fintech/Finance</p>
+			  <p class="text-muted">Concentration in Fintech or Corporate Finance</p>
 			  <a href="{{url_for('finance_bba')}}" class="btn btn-primary">Learn More</a>
 			</figure>
 		</div>
@@ -27,7 +36,7 @@
 			<figure class="figure">
 			  <img style="width:400px; height:300px;"src="{{url_for('static',filename='img/ib.jpg')}}" class="figure-img img-fluid rounded" >
 			  <h5>BBA in International Business</h5>
-			  <p class="text-muted">Major Only</p>
+			  <!-- <p class="text-muted">Major Only</p> -->
 			  <a href="{{url_for('ib')}}" class="btn btn-primary">Learn More</a>
 			</figure>
 		</div>
@@ -45,8 +54,8 @@
 		<div class="col">
 			<figure class="figure">
 			  <img style="width:400px; height:300px;"src="{{url_for('static',filename='img/actuary.jpg')}}" class="figure-img img-fluid rounded" >
-				<h5>Actuarial Studies For Business</h5>
-				 <p class="text-muted">Major Only</p>
+				<h5>BBA in Actuarial Studies For Business</h5>
+				 <!-- <p class="text-muted">Major Only</p> -->
 				 <a href="{{url_for('actuary')}}" class="btn btn-primary">Learn More</a>
 			</figure>
 			</div>
@@ -54,7 +63,7 @@
 			<figure class="figure">
 			  <img style="width:400px; height:300px;"src="{{url_for('static',filename='img/quant.jpg')}}" class="figure-img img-fluid rounded" >
 			  <h5>BSc in Quantitative Economics</h5>
-			  <p class="text-muted">Major Only</p>
+			  <!-- <p class="text-muted">Major Only</p> -->
 			  <a href="{{url_for('quant')}}" class="btn btn-primary">Learn More</a>
 			</figure>
 		</div>
@@ -62,7 +71,7 @@
 			<figure class="figure">
 			  <img style="width:400px; height:300px;"src="{{url_for('static',filename='img/econ.jpg')}}" class="figure-img img-fluid rounded" >
 			  <h5>BA in Economics</h5>
-			  <p class="text-muted">Major Only</p>
+			  <!-- <p class="text-muted">Major Only</p> -->
 			  <a href="{{url_for('econ')}}" class="btn btn-primary">Learn More</a>
 			</figure>
 		</div>
@@ -75,7 +84,7 @@
 			<figure class="figure">
 			  <img style="width:400px; height:300px;"src="{{url_for('static',filename='img/account.jpg')}}" class="figure-img img-fluid rounded" >
 			  <h5>BSc in Accounting</h5>
-			  <p class="text-muted">Major Only</p>
+			  <!-- <p class="text-muted">Major Only</p> -->
 			  <a href="{{url_for('accounting')}}" class="btn btn-primary">Learn More</a>
 			</figure>
 		</div>
@@ -97,7 +106,7 @@
 				<figure class="figure">
 				  <img style="width:400px; height:300px;"src="{{url_for('static',filename='img/risk.jpg')}}" class="figure-img img-fluid rounded" >
 				  <h5>Graduate Program in Risk Management</h5>
-				  <p class="text-muted">Major Only</p>
+				  <!-- <p class="text-muted">Major Only</p> -->
 				  <a href="{{url_for('risk')}}" class="btn btn-primary">Learn More</a>
 				</figure>
 			</div>
@@ -105,7 +114,7 @@
 				<figure class="figure">
 				  <img style="width:400px; height:300px;"src="{{url_for('static',filename='img/account.jpg')}}" class="figure-img img-fluid rounded" >
 				  <h5>MS in Accounting</h5>
-				  <p class="text-muted">Major Only</p>
+				  <!-- <p class="text-muted">Major Only</p> -->
 				  <a href="{{url_for('msaccounting')}}" class="btn btn-primary">Learn More</a>
 				</figure>
 			</div>
