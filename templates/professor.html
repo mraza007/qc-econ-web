@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{professor['name']}}{% endblock %} 
+{% block content %}
+<div class="container" style="padding: 50px;">
+	<div class="row">
+		<div class="col">
+			<img class="rounded"style="width: 400px; height:400px;"src="{{professor['image']}}">
+			<h2 class="display-4">{{professor['name']}}</h2>
+			<a class="btn btn-info" href="{{professor['link']}}" role="button">Link to Website</a>
+		</div>
+		<div class="col">
+			<p class="lead">{{professor['bio']}}</p>
+			<a class="btn btn-info" href="{{url_for('faculty')}}" role="button">Back to Faculty</a>
+
+		</div>
+	</div>
+</div>
+
+
+{%endblock%}
